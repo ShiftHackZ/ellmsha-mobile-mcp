@@ -1,3 +1,45 @@
+<!-- ELLMSHA FORK INTRO -->
+# Mobile MCP — eLLMsha integration fork
+
+**MCP automation for Android and iOS devices and simulators.**
+
+| Provenance | Value |
+| --- | --- |
+| Original project | [Mobile MCP](https://github.com/mobile-next/mobile-mcp) |
+| Upstream baseline | `v1.0.8` |
+| Baseline revision | `65953016441e1f519d47c98d7bcc742647249c95` |
+| Harness patch label | 2 |
+
+## Why this fork exists
+
+Maintained fork consumed by the bundled Mobile Next plugin, with pinned build/runtime provenance.
+
+```mermaid
+flowchart LR
+  Harness[eLLMsha harness] --> Component[Mobile MCP]
+  Component --> Work[Project work]
+```
+
+## Build and integration
+
+Use the parent `scripts/prepare-mobile-mcp.js`. Device enumeration requires the relevant host SDK tools; interactive device operations need their own acceptance.
+
+The parent repository's installer and integration checks are authoritative for the bundled product. A passing upstream test suite alone does not prove eLLMsha integration acceptance. This local documentation update does not publish a release or make unpublished revisions available remotely.
+
+## Contributing
+
+Keep changes focused, preserve upstream licenses and notices, and separate an upstream version update from a harness patch. Record both in the parent application's About provenance. Do not commit credentials, user profiles or commercial project contents. Validate behavior on the platform being changed.
+
+## License and credits
+
+See [LICENSE](LICENSE). Original authors and their license terms remain unchanged. **Moroz Inc.** maintains the eLLMsha integration.
+
+---
+
+## Upstream documentation
+
+<!-- END ELLMSHA FORK INTRO -->
+
 # Mobile Next - MCP server for Mobile Development and Automation | iOS, Android, Simulator, Emulator, and Real Devices
 
 **English** | [日本語](README.ja.md) | [简体中文](README.zh-CN.md)
